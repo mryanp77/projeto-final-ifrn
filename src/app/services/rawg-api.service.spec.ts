@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { JogoService } from './jogo.service';
+import { RawgApiService } from './rawg-api.service';
 
-describe('JogoService', () => {
-  let service: JogoService;
+describe('RawgApiService', () => {
+  let service: RawgApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(JogoService);
+    service = TestBed.inject(RawgApiService);
   });
 
   it('should be created', () => {

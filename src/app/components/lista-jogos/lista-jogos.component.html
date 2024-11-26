@@ -1,1 +1,14 @@
-<p>lista-jogos works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let jogo of jogos" class="col-md-4 mb-4">
+            <div class="card">
+                <img [src]="jogo.background_image" class="card-img-top" alt="{{ jogo.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ jogo.name }}</h5>
+                    <p class="card-text">Lançado: {{ jogo.released }}</p>
+                    <p class="card-text">Nota: {{ jogo.rating }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
